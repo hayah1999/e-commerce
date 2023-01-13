@@ -1,0 +1,335 @@
+
+body{
+   margin: 0;
+   padding: 0;
+}
+
+.navbar-res{
+   background-color: #64c6b6;
+   width: 100%;
+   overflow: hidden;
+   color: white;
+   font-size: larger;
+   font-weight: 600;
+   margin-bottom: 0;
+   display: none;
+}
+.navbar-res #bars{
+   float: right;
+   padding: 0.8rem 1rem;
+   text-align: center;
+}
+.navbar-res img{
+   padding: 3px ;
+   width: 8rem;
+   height: 2.4rem;
+}
+#menu-res{
+    width: 100%;
+    margin-top: 0;
+}
+#nav-res .ul-res{
+   list-style: none;
+   text-align: center;
+}
+
+#nav-res > .ul-res > .li-res{
+   display: block;
+   text-align: center;
+   padding: 8px 10px;
+}
+
+#nav-res > .ul-res > .li-res > .a-res{
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 10px;
+    color: white;
+    font-size: large;
+}
+#nav-res #active{
+   text-decoration: underline;
+}
+#nav-res > .ul-res > .li-res > .a-res:hover:not(.active){
+   text-decoration: underline;
+}
+
+ .navbar{
+   background-color: #64c6b6;
+   width: 100%;
+   overflow: hidden;
+}
+
+.navbar img{
+   padding: 10px 12px;
+   width: 8rem;
+   height: 2.4rem;
+}
+.nav-bar{
+    float: right; 
+ }
+ .nav-bar ul{
+    list-style: none;
+ }
+ .nav-bar ul li{
+    display: inline-block;
+ }
+ .nav-bar ul li a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 10px;
+    color: white;
+    font-size: large;
+ }
+ #active{
+   text-decoration: underline;
+ }
+ .nav-bar ul li a:hover:not(.active){
+    text-decoration: underline;
+ }
+
+ @media screen and (max-width: 650px)  {
+   .navbar-res{
+      display: block;
+   }
+   .navbar{
+      display: none;
+   }
+}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mySlides {
+   display: none
+}
+
+.img-slide {
+   vertical-align: middle;
+   height:25rem;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width:auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius:10px;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 10px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #202124;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .prev, .next {font-size: 11px}
+}
+
+#header{
+   margin-top: 3rem;
+   text-align: center;
+   font-family: 'Trocchi', serif;
+   font-size: 25px; 
+   font-weight: normal; 
+   line-height: 48px;
+}
+
+.cards{
+   box-sizing: border-box;
+   margin-bottom: 2rem;
+   margin-top: 2rem;
+   padding: 1rem;
+   text-align: center;
+   padding-left: 2rem;
+}
+.card{
+   width: 20%;
+   display: inline-block;
+   margin-right: 2rem;
+   box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card > .image{
+   width: 100%;
+} 
+.card> .image > img{
+   max-width: 100%;
+}
+.details{
+   padding: 0.5rem;
+}
+.details > h4{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px; 
+    font-weight: 300; 
+    line-height: 32px;
+    display: inline-block; 
+    margin-right: 0.7rem;
+}
+.details > span{
+   color: #4c4a37; 
+   font-family: 'Lato', sans-serif; 
+   font-size: 12px; 
+   font-weight: bold; 
+   line-height: 12px; 
+   letter-spacing: 1px
+}
+.details > p{
+   color: #4c4a37; 
+   font-family: 'Source Sans Pro', sans-serif; 
+   font-size: 18px; 
+   line-height: 32px
+}
+
+@media screen and (max-width: 1500px) {
+
+   .cards{
+      text-align: center;
+      margin: 11rem;
+   }
+   .card{
+      width: 90%;
+      margin-top: 1rem;
+      display: block;
+   }
+}
+
+@media screen and (max-width: 750px) {
+
+   .cards{
+      text-align: center;
+      margin: 4rem;
+   }
+   .card{
+      width: 90%;
+      margin-top: 1rem;
+      display: block;
+   }
+}
+
+
+.footer{
+   box-sizing: border-box;
+   background-image: url('../images/footer.png');
+   background-repeat: no-repeat;
+   background-size:contain;
+   width: 100%;
+   height: 29rem;
+   padding-top: 10%;
+}
+
+.foot-details > .brand{
+  display: inline-block;
+  text-align: center; 
+  margin-left: 3rem;
+  font-family: 'Trocchi', serif; 
+  font-size: 45px; 
+  font-weight: normal; 
+  line-height: 48px;
+  margin-right: 40%; 
+}
+
+.foot-details > .icons{
+   display: inline-block;
+   margin-top: 1rem;
+   padding: 1rem;
+}
+.foot-details > .icons > .icon > .icondesc >a{
+   text-decoration: none;
+   color: black;
+}
+.foot-details > .icons > .icon > .icondesc >a:hover{
+  color: white;
+  text-decoration: underline;
+}
+.foot-details > .icons > .icon{
+   margin-bottom: 0.5rem;
+   font-family: 'Lato', sans-serif; 
+   font-size: 16px; 
+   font-weight: bold; 
+   line-height: 12px; 
+   letter-spacing: 1px;
+}
+
+@media screen and (max-width: 700px){
+   .footer{
+      width: 100%;
+      height: 7.8rem;
+   }
+   .foot-details > .brand{
+      display: inline-block;
+      text-align: center; 
+      margin-left: 0.3rem;
+      font-family: 'Trocchi', serif; 
+      font-size: 15px; 
+      font-weight: normal; 
+      line-height: 10px;
+      margin-right: 17%;
+   }
+   .foot-details > .icons{
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.1rem;
+   }
+
+   .foot-details > .icons > .icon{
+      margin-bottom: 0.5rem;
+      font-family: 'Lato', sans-serif; 
+      font-size: 8px; 
+      font-weight: bold; 
+      line-height: 6px; 
+      letter-spacing: 1px;
+   }
+
+}

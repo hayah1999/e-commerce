@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/backgroundlogin.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card{
+    margin: auto;
+    margin-top: 8%;
+    background-color: rgba(12, 7, 58, 0.403);
+    width: 400px;
+    height: 500px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px 10px 21px;
+ 
+}
+.regcard{
+    margin: auto;
+    margin-top: 5%;
+    background-color: rgba(12, 7, 58, 0.403);
+    width: 400px;
+    height: 594px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px 0px 21px;
+}
+
+.regfield{
+    justify-content: center;
+    width: 354px;
+    height: 550px;
+}
+
+fieldset{
+    justify-content: center;
+    width: 354px;
+    height: 460px;
+}
+legend{
+   
+    text-align: center;
+    justify-content: center;
+}
+legend img{
+    background-color: white;
+    border-radius: 50px;
+}
+
+.header{
+    text-align: center;
+    color: white;
+}
+.header span{
+    font-size: 50px;
+    font-family: serif;
+}
+.label-form{
+    display: block;
+    color: white;
+    margin-bottom: 8px;
+}
+.input-form{
+    width: 95%;
+    height: 25px;
+    margin-bottom: 20px;
+}
+
+.btn{
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+.btn input{
+    width:70%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(213, 128, 157);
+    border: none;
+}
+
+.links{
+    margin-top: 30px;
+}
+.links a{
+    display: block;
+    color:rgb(13, 190, 99);
+}
