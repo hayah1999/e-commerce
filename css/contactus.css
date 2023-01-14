@@ -67,7 +67,8 @@ body{
     height: 2.4rem;
  }
  .nav-bar{
-     float: right; 
+     float: right;  
+     margin-right: 0.5rem;
   }
   .nav-bar ul{
      list-style: none;

@@ -66,6 +66,7 @@ body{
 }
 .nav-bar{
     float: right; 
+    margin-right: 0.5rem;
  }
  .nav-bar ul{
     list-style: none;
@@ -122,7 +123,7 @@ body{
   margin-top: -22px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 24px;
   transition: 0.6s ease;
   border-radius:10px;
   user-select: none;
