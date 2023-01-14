@@ -1,0 +1,235 @@
+body{
+    background-image: url('../images/backgroundlogin.png'); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-res{
+    background-color: #64c6b6;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+    margin-bottom: 0;
+    display: none;
+ }
+ .navbar-res #bars{
+    float: right;
+    padding: 0.8rem 1rem;
+    text-align: center;
+ }
+ .navbar-res img{
+    padding: 3px ;
+    width: 8rem;
+    height: 2.4rem;
+ }
+ #menu-res{
+     width: 100%;
+     margin-top: 0;
+ }
+ #nav-res .ul-res{
+    list-style: none;
+    text-align: center;
+ }
+ 
+ #nav-res > .ul-res > .li-res{
+    display: block;
+    text-align: center;
+    padding: 8px 10px;
+ }
+ 
+ #nav-res > .ul-res > .li-res > .a-res{
+     text-decoration: none;
+     text-align: center;
+     padding: 8px 10px;
+     color: white;
+     font-size: large;
+ }
+ #nav-res #active{
+    text-decoration: underline;
+ }
+ #nav-res > .ul-res > .li-res > .a-res:hover:not(.active){
+    text-decoration: underline;
+ }
+ 
+  .navbar{
+    background-color: #64c6b6;
+    width: 100%;
+    overflow: hidden;
+ }
+ 
+ .navbar img{
+    padding: 10px 12px;
+    width: 8rem;
+    height: 2.4rem;
+ }
+ .nav-bar{
+     float: right; 
+  }
+  .nav-bar ul{
+     list-style: none;
+  }
+  .nav-bar ul li{
+     display: inline-block;
+  }
+  .nav-bar ul li a{
+     display: block;
+     text-decoration: none;
+     text-align: center;
+     padding: 8px 10px;
+     color: white;
+     font-size: large;
+  }
+  #active{
+    text-decoration: underline;
+  }
+  .nav-bar ul li a:hover:not(.active){
+     text-decoration: underline;
+  }
+ 
+  @media screen and (max-width: 650px)  {
+    .navbar-res{
+       display: block;
+    }
+    .navbar{
+       display: none;
+    }
+ }
+ 
+
+.form{
+    margin: auto;
+    margin-top: 5%;
+    background-color: rgba(12, 7, 58, 0.403);
+    width: 400px;
+    height: 500px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px 10px 21px;
+}
+
+.fieldset{
+   justify-content: center;
+   width: 354px;
+   height: 460px;
+}
+.legend{
+  
+   text-align: center;
+   justify-content: center;
+}
+.legend > .img{
+   background-color: white;
+   border-radius: 50px;
+}
+
+.title{
+   text-align: center;
+   color: white;
+}
+.title > span{
+   font-size: 50px;
+   font-family: serif;
+}
+
+.label-form{
+   display: block;
+   color: white;
+   margin-bottom: 8px;
+}
+.input-form{
+   width: 95%;
+   height: 25px;
+   margin-bottom: 20px;
+}
+
+.btn{
+   justify-content: center;
+   text-align: center;
+   margin: auto;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+}
+.btn input{
+   width:70%;
+   height: 40px;
+   border-radius: 20px;
+   background-color: #EA7A78;
+   border: none;
+}
+
+.comment {
+    float: left;
+    width: 95%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+.commenter {
+    float: left;
+}
+.commenter img {
+    width: 35px;
+    height: 35px;
+}
+.comment-text-area {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.textinput {
+    float: left;
+    width: 100%;
+    min-height: 75px;
+    outline: none;
+    resize: none;
+    border: 1px solid grey;
+}
+
+@media screen and (max-width: 680px) {
+
+    body{
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+    .form{
+        margin: auto;
+        margin-top: 5%;
+        width: 300px;
+        height: 450px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 10px 10px 21px;
+    }
+
+    .fieldset{
+        justify-content: center;
+        width: 254px;
+        height: 400px;
+     }
+     .legend > .img{
+        background-color: white;
+        border-radius: 50px;
+        height: 40px; 
+        width: 40px;
+    }
+}
+        
+@media screen and (min-width: 900px) and (max-width: 1078px) {
+    body{
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+    .form{
+        margin-top: 8%;
+    }
+}
