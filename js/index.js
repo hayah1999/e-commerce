@@ -10,13 +10,13 @@ bar.addEventListener('click', () => {
         menu.innerHTML = `<nav  id="nav-res">
         <ul class='ul-res'>
             <li class='li-res'>
-                <a id="active" href="index.html" class='a-res'>Home</a>
+                <a href="index.html" class='a-res'>Home</a>
             </li>
             <li class='li-res'>
-                <a class='a-res' href="">Contact Us</a>
+                <a class='a-res' href="contactUs.html">Contact Us</a>
             </li>
             <li class='li-res'>
-                <a class='a-res' href="">Users</a>
+                <a class='a-res' href="usersTable.html">Users</a>
             </li>
             <li class='li-res'>
                 <a class='a-res' href="login.html">Login</a>
@@ -28,42 +28,10 @@ bar.addEventListener('click', () => {
     </nav>`;
 
         clicked = 1;
-        console.log(clicked)
 
     }else{
         
         clicked = 0;
-        console.log(clicked)
         menu.style.display = "none";
     }
 });
-
-
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-

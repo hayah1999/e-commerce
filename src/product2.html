@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="../../css/contactUs.css">
+    <title>Birthday1</title>
+    <link rel="stylesheet" href="../css/products.css">
     <script src="https://kit.fontawesome.com/946ee284d2.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -22,10 +22,10 @@
     <nav class="nav-bar">
         <ul>
             <li>
-                <a  href="index.html">Home</a>
+                <a id="active" href="index.html">Home</a>
             </li>
             <li>
-                <a id="active" href="contactUs.html">Contact Us</a>
+                <a href="contactUs.html">Contact Us</a>
             </li>
             <li>
                 <a href="usersTable.html">Users</a>
@@ -40,27 +40,28 @@
     </nav>
     </div>
 
-    <!-- Contact Us form -->
-    <form class="form">
-        <fieldset class="fieldset">
-            <h2 class="title"><span>C</span>ontact <span>U</span>s</h2>
-
-            <div class="content-form">
-            <label for="email" class="label-form">E-mail</label>
-            <input type="email" id="email" placeholder="E-mail" class="input-form">
-            <label for="message" class="label-form">Message</label>
-                <div class="comment">
-                    <textarea id="message" class="textinput" placeholder="Message"></textarea>
-                </div>
-            <div class="btn">
-                <input type="submit" value="Submit">
-            </div>
+    <!-- Product details -->
+    <div class="container">
+        <div class="card">
+        <div class="prod-img">
+            <img src="../images/netflix.png">
         </div>
+       </div>
+       <div class="card box">
+            <div class="header">
+               <h3 class="prod-name"> Netflix Card </h3>
+            </div>
+            <div class="desc">
+               <h5>Description: </h5>
+               <p> you can charge and send this to someone you love and cherish via email. you can attach with it a message you can find it at the checkout page.</p>
+               <h5 class="price">Price:</h5>
+               <span>100 L.E</span>
+            </div>
+        
+      </div>
+    </div>
 
-       </fieldset>
-    </form>
 
-    
     <script src="../js/index.js"></script>
 </body>
 </html>

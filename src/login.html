@@ -6,15 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="../../css/style.css">
+    <script src="https://kit.fontawesome.com/946ee284d2.js" crossorigin="anonymous"></script>
     
 </head>
 <body>
+    <div class="navbar-res" id="navbar-res">
+        <img src="../../images/logo.png" height=30>
+        <div id="bars"><i class="fa-solid fa-bars"></i></div>
+        <div id="menu-res"></div>
+    </div>
+   
+    <div class="navbar">
+        
+            <img src="../../images/logo.png" height=30>
+       
+    <nav class="nav-bar">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="contactUs.html">Contact Us</a>
+            </li>
+            <li>
+                <a href="usersTable.html">Users</a>
+            </li>
+            <li>
+                <a id="active" href="login.html">Login</a>
+            </li>
+            <li>
+                <a href="register.html">Register</a>
+            </li>
+        </ul>
+    </nav>
+    </div>
     <div class="card">
       <form>
         <fieldset>
-            <legend><img src="../../images/logo PNG 2.png"></legend>
             <h2 class="header"><span>L</span>ogin Here</h2>
 
+            <div class="form-details">
             <label for="username" class="label-form">User Name</label>
             <input type="text" id="username" placeholder="Name" class="input-form">
             <label for="password" class="label-form">Password</label>
@@ -24,11 +55,12 @@
                 <input type="submit" value="Login">
             </div>
         <div class="links">
-            <a href="#">Forget Password</a>
             <a href="register.html">Don't have an account?</a>
         </div>  
+       </div>
         </fieldset>
       </form>
     </div>
+    <script src="../js/index.js"></script>
 </body>
 </html>

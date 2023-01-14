@@ -6,19 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="../../css/style.css">
+    <script src="https://kit.fontawesome.com/946ee284d2.js" crossorigin="anonymous"></script>
     
 </head>
 <body>
+    <div class="navbar-res" id="navbar-res">
+        <img src="../../images/logo.png" height=30>
+        <div id="bars"><i class="fa-solid fa-bars"></i></div>
+        <div id="menu-res"></div>
+    </div>
+   
+    <div class="navbar">
+        
+            <img src="../../images/logo.png" height=30>
+       
+    <nav class="nav-bar">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="contactUs.html">Contact Us</a>
+            </li>
+            <li>
+                <a href="usersTable.html">Users</a>
+            </li>
+            <li>
+                <a href="login.html">Login</a>
+            </li>
+            <li>
+                <a id="active" href="register.html">Register</a>
+            </li>
+        </ul>
+    </nav>
+    </div>
+
     <div class="regcard">
       <form>
         <fieldset class="regfield">
-            <legend><img src="../../images/logo PNG 2.png" height=70 width=70></legend>
             <h2 class="header"><span>R</span>egister Here</h2>
 
+            <label for="fname" class="label-form">First Name</label>
+            <input type="text" id="fname" placeholder="First Name" class="input-form">
+            <label for="lname" class="label-form">Last Name</label>
+            <input type="text" id="lname" placeholder="Last Name" class="input-form">
             <label for="username" class="label-form">User Name</label>
-            <input type="text" id="username" placeholder="Name" class="input-form">
+            <input type="text" id="username" placeholder="Username" class="input-form">
             <label for="email" class="label-form">E-Mail</label>
             <input type="email" id="email" placeholder="E-mail" class="input-form">
+            <label for="rad" class="label-form" id="rad">Gender</label>
+            <input type="radio" value="Female" name="rad"><label id="rad1" for="female">Female</label>
+            <input type="radio" value="Male" name="rad"><label id="rad1" for="male">Male</label>
             <label for="password" class="label-form">Password</label>
             <input type="password" id="password" placeholder="Password" class="input-form">
             
@@ -31,5 +69,6 @@
         </fieldset>
       </form>
     </div>
+    <script src="../js/index.js"></script>
 </body>
 </html>

@@ -4,9 +4,100 @@ body{
     background-image: url("../images/backgroundlogin.png");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 100%;
 }
+
+.navbar-res{
+    background-color: #64c6b6;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+    margin-bottom: 0;
+    display: none;
+ }
+ .navbar-res #bars{
+    float: right;
+    padding: 0.8rem 1rem;
+    text-align: center;
+ }
+ .navbar-res img{
+    padding: 3px ;
+    width: 8rem;
+    height: 2.4rem;
+ }
+ #menu-res{
+     width: 100%;
+     margin-top: 0;
+ }
+ #nav-res .ul-res{
+    list-style: none;
+    text-align: center;
+ }
+ 
+ #nav-res > .ul-res > .li-res{
+    display: block;
+    text-align: center;
+    padding: 8px 10px;
+ }
+ 
+ #nav-res > .ul-res > .li-res > .a-res{
+     text-decoration: none;
+     text-align: center;
+     padding: 8px 10px;
+     color: white;
+     font-size: large;
+ }
+ #nav-res #active{
+    text-decoration: underline;
+ }
+ #nav-res > .ul-res > .li-res > .a-res:hover:not(.active){
+    text-decoration: underline;
+ }
+ 
+  .navbar{
+    background-color: #64c6b6;
+    width: 100%;
+    overflow: hidden;
+ }
+ 
+ .navbar img{
+    padding: 10px 12px;
+    width: 8rem;
+    height: 2.4rem;
+ }
+ .nav-bar{
+     float: right; 
+  }
+  .nav-bar ul{
+     list-style: none;
+  }
+  .nav-bar ul li{
+     display: inline-block;
+  }
+  .nav-bar ul li a{
+     display: block;
+     text-decoration: none;
+     text-align: center;
+     padding: 8px 10px;
+     color: white;
+     font-size: large;
+  }
+  #active{
+    text-decoration: underline;
+  }
+  .nav-bar ul li a:hover:not(.active){
+     text-decoration: underline;
+  }
+ 
+  @media screen and (max-width: 650px)  {
+    .navbar-res{
+       display: block;
+    }
+    .navbar{
+       display: none;
+    }
+ }
 .card{
     margin: auto;
     margin-top: 8%;
@@ -19,12 +110,15 @@ body{
     padding: 30px 10px 10px 21px;
  
 }
+.card .form-details{
+    margin-top: 5rem;
+}
 .regcard{
     margin: auto;
-    margin-top: 5%;
+    margin-top: 2%;
     background-color: rgba(12, 7, 58, 0.403);
     width: 400px;
-    height: 594px;
+    height: 660px;
     display: block;
     justify-content: center;
     align-items: center;
@@ -32,28 +126,15 @@ body{
 }
 
 .regfield{
-    justify-content: center;
     width: 354px;
-    height: 550px;
+    height: 620px;
 }
 
 fieldset{
-    justify-content: center;
     width: 354px;
     height: 460px;
 }
-legend{
-   
-    text-align: center;
-    justify-content: center;
-}
-legend img{
-    background-color: white;
-    border-radius: 50px;
-    height: 70px; 
-    width: 70px;
-}
-
+ 
 .header{
     text-align: center;
     color: white;
@@ -72,7 +153,13 @@ legend img{
     height: 25px;
     margin-bottom: 20px;
 }
-
+#rad{
+    display: inline-block;
+    margin-right: 5rem;
+}
+#rad1{
+    color: white;
+}
 .btn{
     justify-content: center;
     text-align: center;
@@ -82,7 +169,7 @@ legend img{
     width:70%;
     height: 40px;
     border-radius: 20px;
-    background-color: rgb(213, 128, 157);
+    background-color: #D26C6A;
     border: none;
 }
 
@@ -115,19 +202,8 @@ legend img{
         padding: 30px 10px 10px 21px;
     }
     fieldset{
-        justify-content: center;
         width: 254px;
-        height: 400px;
-    }
-    legend{
-        text-align: center;
-        justify-content: center;
-    }
-    legend > img{
-        background-color: white;
-        border-radius: 50px;
-        height: 40px; 
-        width: 40px;
+        height: 415px;
     }
 
     .regcard{
@@ -135,7 +211,7 @@ legend img{
         margin-top: 18%;
         background-color: rgba(12, 7, 58, 0.403);
         width: 300px;
-        height: 550px;
+        height: 660px;
         display: block;
         justify-content: center;
         align-items: center;
@@ -143,9 +219,12 @@ legend img{
     }
     
     .regfield{
-        justify-content: center;
         width: 254px;
-        height: 500px;
+        height: 620px;
+    }
+    #rad{
+        display: inline-block;
+        margin-right: 3rem;
     }
 }
 

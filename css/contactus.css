@@ -113,20 +113,12 @@ body{
 }
 
 .fieldset{
-   justify-content: center;
    width: 354px;
    height: 460px;
 }
-.legend{
-  
-   text-align: center;
-   justify-content: center;
+.content-form{
+    padding-top: 5rem;
 }
-.legend > .img{
-   background-color: white;
-   border-radius: 50px;
-}
-
 .title{
    text-align: center;
    color: white;
@@ -202,7 +194,7 @@ body{
         margin: auto;
         margin-top: 5%;
         width: 300px;
-        height: 450px;
+        height: 500px;
         display: block;
         justify-content: center;
         align-items: center;
@@ -212,14 +204,8 @@ body{
     .fieldset{
         justify-content: center;
         width: 254px;
-        height: 400px;
+        height: 450px;
      }
-     .legend > .img{
-        background-color: white;
-        border-radius: 50px;
-        height: 40px; 
-        width: 40px;
-    }
 }
         
 @media screen and (min-width: 900px) and (max-width: 1078px) {
