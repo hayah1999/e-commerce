@@ -25,3 +25,26 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+let slide = 0;
+
+function showSlide(){
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for(let i = 0; i < slides.length; i++){
+    slides[i].style.display = 'none';
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slide++;
+  if(slide > slides.length){
+    slide = 1;
+  }
+  slides[slide - 1].style.display = 'block';
+  dots[slide-1].className += " active";
+  setTimeout(showSlide, 5000);
+}
+
+showSlide();
+
+
